@@ -1,0 +1,9 @@
+[
+  {
+    "title": "Econo Market",
+    "imageSrc": "projects/econo.svg",
+    "description": "This platform allows users to view and share product prices across different markets, promoting collaboration among users to inform product prices in local supermarkets.",
+    "skills": ["React Native", "Expo"],
+    "source": "https://github.com/GBergue/econo-market"
+  }
+]

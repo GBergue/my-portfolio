@@ -1,0 +1,54 @@
+[
+  {
+    "title": "React Native",
+    "imageSrc": "skills/react.png"
+  },
+  {
+    "title": "Expo",
+    "imageSrc": "skills/expo.png"
+  },
+  {
+    "title": "React",
+    "imageSrc": "skills/react.png"
+  },
+  {
+    "title": "Spring Boot",
+    "imageSrc": "skills/spring.png"
+  },
+  {
+    "title": "TypeScript",
+    "imageSrc": "skills/typescript.png"
+  },
+  {
+    "title": "JavaScript",
+    "imageSrc": "skills/js.png"
+  },
+  {
+    "title": "Java",
+    "imageSrc": "skills/java.png"
+  },
+  {
+    "title": "HTML",
+    "imageSrc": "skills/html.png"
+  },
+  {
+    "title": "CSS",
+    "imageSrc": "skills/css.png"
+  },
+  {
+    "title": "PostgreSQL",
+    "imageSrc": "skills/postgres.png"
+  },
+  {
+    "title": "Git",
+    "imageSrc": "skills/gitlab.png"
+  },
+  {
+    "title": "Google Play",
+    "imageSrc": "skills/google-play.png"
+  },
+  {
+    "title": "Apple Store",
+    "imageSrc": "skills/app-store.png"
+  }
+]
