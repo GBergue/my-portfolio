@@ -120,4 +120,24 @@
   .content {
     align-items: center;
   }
+
+  .header {
+    margin-top: 32px;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .emoji {
+    font-size: 34px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .contactBtn {
+    font-size: 18px;
+  }
 }
