@@ -10,5 +10,8 @@
   --font-roboto: "Roboto";
   --font-size-text: 18px;
   --font-size-header: 32px;
+
+  /* Spacing */
+  --margin-sections: 64px;
   
 }
