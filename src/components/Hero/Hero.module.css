@@ -26,7 +26,7 @@
 }
 
 .title {
-  font-size: 64px;
+  font-size: var(--font-size-header);
   font-weight: 900;
   margin-bottom: 33px;
   font-family: var(--font-roboto);
@@ -40,13 +40,13 @@
 }
 
 .emoji {
-  font-size: 60px;
+  font-size:var(--font-size-header);
   font-weight: 900;
   margin-bottom: 33px;
 }
 
 .description {
-  font-size: 30px;
+  font-size: var(--font-size-text);
   font-family: var(--font-roboto);
   margin-bottom: 52px;
   color: var(--color-text);
@@ -57,7 +57,7 @@
   background-color: var(--color-primary);
   color: var(--color-text);
   border-radius: 100px;
-  font-size: 20px;
+  font-size: var(--font-size-text);
   font-weight: 600;
   padding: 17px 26px;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
@@ -125,19 +125,4 @@
     margin-top: 32px;
   }
 
-  .title {
-    font-size: 34px;
-  }
-
-  .emoji {
-    font-size: 34px;
-  }
-
-  .description {
-    font-size: 18px;
-  }
-
-  .contactBtn {
-    font-size: 18px;
-  }
 }
