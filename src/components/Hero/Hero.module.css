@@ -47,6 +47,7 @@
 }
 
 .contactBtn {
+  margin-right: 16px;
   text-decoration: none;
   background-color: var(--color-primary);
   color: var(--color-text);
