@@ -13,7 +13,7 @@ export const Hero = () => {
         </div>
         <p className={styles.description}>
           Software Engineer with 4 years of hands-on experience.
-          <p>Reach out if you'd like to learn more!</p>
+          <br></br>Reach out if you'd like to learn more!
         </p>
         <div>
           <a target="_blank" href="mailto:bergueeg@gmail.com" className={styles.contactBtn}>
