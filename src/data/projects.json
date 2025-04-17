@@ -1,9 +1,20 @@
 [
   {
+    "title": "Show case expo APP",
+    "imageSrc": "projects/smartHome.svg",
+    "description": "Application showcasing a smart home device management system. The app allows users to view, control, and monitor connected devices using Bluetooth Low Energy (BLE) technology.",
+    "skills": ["React Native", "Expo", "Bluetooth", "Graphs"],
+    "source": "https://github.com/GBergue/show-case-app",
+    "imgWidth": 100,
+    "imgHeight": 100
+  },
+  {
     "title": "Econo Market",
     "imageSrc": "projects/econo.svg",
     "description": "This platform allows users to view and share product prices across different markets, promoting collaboration among users to inform product prices in local supermarkets.",
     "skills": ["React Native", "Expo"],
-    "source": "https://github.com/GBergue/econo-market"
+    "source": "https://github.com/GBergue/econo-market",
+    "imgWidth": 150,
+    "imgHeight": 150
   }
 ]
