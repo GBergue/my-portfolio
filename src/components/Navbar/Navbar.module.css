@@ -80,3 +80,28 @@
     z-index: 1;
   }
 }
+
+
+.menuLink {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.menuLink::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #3498db; /* You can change this color */
+  transition: width 0.3s ease;
+}
+
+.menuLink:hover {
+  color: #3498db; /* This should match the underline color */
+}
+
+.menuLink:hover::after {
+  width: 100%;
+}
