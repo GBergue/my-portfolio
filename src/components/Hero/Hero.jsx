@@ -7,7 +7,7 @@ export const Hero = () => {
     <header className={styles.masthead} id="top">
       <img
         className={styles.photo}
-        src="/me.png"
+        src={`${import.meta.env.BASE_URL}me.png`}
         alt="Guilherme Bergue"
         width="128"
         height="128"
