@@ -1,0 +1,12 @@
+@import "../../vars.css";
+
+.degree {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.at {
+  color: var(--rule);
+  margin: 0 0.15rem;
+}

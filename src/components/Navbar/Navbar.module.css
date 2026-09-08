@@ -1,107 +1,115 @@
 @import "../../vars.css";
 
 .navbar {
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: color-mix(in srgb, var(--paper) 88%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--rule);
+}
+
+.inner {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0.85rem var(--page-x);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 32px;
-  z-index: 2;
-  margin: 0 10%;
+  gap: 1rem;
 }
 
-.title {
-  font-size: var(--font-size-header);
-  font-weight: 600;
+.wordmark {
+  font-family: var(--font-mono);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--ink);
   text-decoration: none;
-  color: var(--color-text);
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
 }
 
-
-.menuBtn {
-  display: none;
+.ver {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--accent-ink);
+  background: color-mix(in srgb, var(--accent) 9%, transparent);
+  padding: 0.08rem 0.36rem;
+  border-radius: 4px;
 }
 
-.menu {
-  display: flex;
-}
-
-.menuItems {
-  display: flex;
-  gap: 47px;
+.links {
   list-style: none;
+  display: flex;
+  gap: 1.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
 }
 
-.menuItems a {
-  font-size: var(--font-size-text);
-  color: var(--color-text);
+.links a {
+  color: var(--ink-soft);
   text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
 }
 
-@media screen and (max-width: 830px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+.links a:hover {
+  color: var(--ink);
+  border-color: var(--accent);
+}
 
-  .menu {
+.toggle {
+  display: none;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: 7px;
+  padding: 0.35rem;
+  cursor: pointer;
+  line-height: 0;
+}
+
+@media (max-width: 46rem) {
+  .toggle {
+    display: inline-flex;
+  }
+  .links {
     position: absolute;
+    top: 100%;
+    left: 0;
     right: 0;
-    margin-right: 10%;
     flex-direction: column;
-    align-items: flex-end;
-    gap: 11px;
-    z-index: 3;
+    gap: 0;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+    opacity: 0;
+    transform: translateY(-6px);
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
   }
-
-  .menuBtn {
+  .links.open {
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+  .links li {
+    padding: 0 var(--page-x);
+  }
+  .links li + li {
+    border-top: 1px solid var(--rule);
+  }
+  .links a {
     display: block;
-    cursor: pointer;
-  }
-
-  .menuItems {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 13px;
-    border-radius: 10px;
-    background: rgb(25, 55, 109);
-    background: linear-gradient(
-      0deg,
-      rgba(25, 55, 109, 0.2) 0%,
-      rgba(25, 55, 109, 1) 100%
-    );
-    padding: 24px 33px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-  }
-
-  .menuOpen {
-    display: flex;
-    z-index: 1;
+    padding: 0.9rem 0;
+    border-bottom: none;
   }
 }
 
-
-.menuLink {
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-.menuLink::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: #3498db; /* You can change this color */
-  transition: width 0.3s ease;
-}
-
-.menuLink:hover {
-  color: #3498db; /* This should match the underline color */
-}
-
-.menuLink:hover::after {
-  width: 100%;
+@media (prefers-reduced-motion: reduce) {
+  .links {
+    transition: none;
+  }
 }

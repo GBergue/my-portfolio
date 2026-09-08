@@ -1,110 +1,143 @@
 @import "../../vars.css";
 
-.container {
+.masthead {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: var(--margin-sections);
-  z-index: 1;
-  margin-left: 10%;
-  margin-right: 10%;
+  padding-left: var(--gutter);
+  padding-top: clamp(2.75rem, 6vw, 4.5rem);
+  padding-bottom: clamp(0.5rem, 2vw, 1.5rem);
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  color: var(--color-text);
-  z-index: 1;
+.text {
+  max-width: 46rem;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  z-index: 1;
-}
-
-.title {
-  font-size: var(--font-size-header);
-  font-weight: 900;
-  font-family: var(--font-roboto);
-  background: #FFF;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-}
-
-.emoji {
-  font-size:var(--font-size-header);
-  font-weight: 900;
-}
-
-.description {
-  font-size: var(--font-size-text);
-  font-family: var(--font-roboto);
-  margin-bottom: 52px;
-  color: var(--color-text);
-}
-
-.contactBtn {
-  margin-right: 16px;
-  text-decoration: none;
-  background-color: var(--color-primary);
-  color: var(--color-text);
-  border-radius: 100px;
-  font-size: var(--font-size-text);
+.name {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
   font-weight: 600;
-  padding: 17px 26px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
 }
 
-.heroImg {
-  z-index: 1;
+.meta {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--ink-soft);
+  margin-bottom: 1.25rem;
 }
 
-.topBlur {
+.dot {
+  margin: 0 0.5rem;
+  color: var(--rule);
+}
+
+.headline {
+  font-size: clamp(1.9rem, 1.3rem + 2.6vw, 3rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 1.1rem;
+}
+
+.sub {
+  font-size: 1.0625rem;
+  color: var(--ink-soft);
+  max-width: 40rem;
+  margin-bottom: 1.75rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.4rem;
+}
+
+.primary,
+.secondary {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  padding: 0.7rem 1.3rem;
+  border-radius: 7px;
+  text-decoration: none;
+  transition: transform 0.12s ease, background 0.15s ease, border-color 0.15s ease;
+}
+
+.primary {
+  background: var(--accent);
+  color: var(--paper);
+  border: 1px solid var(--accent);
+}
+
+.primary:hover {
+  background: var(--accent-ink);
+  border-color: var(--accent-ink);
+}
+
+.secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--rule);
+}
+
+.secondary:hover {
+  border-color: var(--ink);
+}
+
+.primary:active,
+.secondary:active {
+  transform: translateY(1px);
+}
+
+.links {
+  font-size: 0.9375rem;
+  color: var(--ink-soft);
+}
+
+.links a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.links a:hover {
+  color: var(--ink);
+  border-color: var(--accent);
+}
+
+.photo {
   position: absolute;
-  width: 50vw;
-  height: 50vw;
-  min-width: 350px;
-  min-width: 350px;
-  top: -128px;
-  left: -10vw;
-  border-radius: 764px;
-  background: rgba(25, 55, 109, 0.7);
-  filter: blur(100px);
-  z-index: -10;
+  left: 0;
+  top: clamp(2.75rem, 6vw, 4.5rem);
+  width: clamp(68px, 8.5vw, 88px);
+  height: clamp(68px, 8.5vw, 88px);
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid var(--rule);
 }
 
-.bottomBlur {
-  position: absolute;
-  width: 70vw;
-  height: 50vw;
-  min-width: 350px;
-  min-width: 250px;
-  top: 246px;
-  right: -25vw;
-  border-radius: 764px;
-  background: rgba(25, 55, 109, 0.7);
-  filter: blur(100px);
-  z-index: -10;
+@media (max-width: 46rem) {
+  .masthead {
+    padding-left: 0;
+  }
+  .photo {
+    position: static;
+    margin-bottom: 1.1rem;
+  }
+  .primary,
+  .secondary {
+    flex: 1 1 auto;
+    text-align: center;
+  }
 }
 
-.header {
-  margin-bottom: 32px;
-}
-
-@media screen and (max-width: 830px) {
-  .container {
-    flex-direction: column-reverse;
+@media (prefers-reduced-motion: reduce) {
+  .primary,
+  .secondary {
+    transition: none;
   }
-
-  .content {
-    align-items: center;
-  }
-
-  .header {
-    margin-top: 32px;
-  }
-
 }

@@ -1,6 +1,6 @@
 [
   {
-    "title": "Show case expo APP",
+    "title": "Showcase Expo app",
     "imageSrc": "projects/smartHome.svg",
     "description": "Application showcasing a smart home device management system. The app allows users to view, control, and monitor connected devices using Bluetooth Low Energy (BLE) technology.",
     "skills": ["React Native", "Expo", "Bluetooth", "Graphs"],
@@ -16,5 +16,19 @@
     "source": "https://github.com/GBergue/econo-market",
     "imgWidth": 150,
     "imgHeight": 150
+  },
+  {
+    "title": "AI Travel Agency",
+    "description": "Experimental AI-powered travel agency assistant. A language model autonomously manages travel bookings from natural-language queries, deciding when to invoke MCP tools, with input and output guardrails. Postgraduate study project.",
+    "skills": ["Java 25", "Quarkus", "LangChain4j", "MCP", "Ollama", "PgVector"],
+    "source": "https://github.com/GBergue/agencia-viagem-ai",
+    "note": "backend"
+  },
+  {
+    "title": "Florinda Eats",
+    "description": "Food-delivery backend built as an event-driven microservices system: independent orders, payments, and fiscal-invoice services communicating over Kafka. Study project on Quarkus Messaging.",
+    "skills": ["Java", "Quarkus", "Kafka", "Microservices", "Docker"],
+    "source": "https://github.com/GBergue/quarkus-kafka-florinda-eats",
+    "note": "backend"
   }
 ]

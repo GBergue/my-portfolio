@@ -1,0 +1,112 @@
+@import "../../vars.css";
+
+.entry {
+  display: grid;
+  grid-template-columns: var(--rail) minmax(0, 1fr);
+  column-gap: var(--rail-gap);
+  padding-block: clamp(1.5rem, 2.6vw, 2.1rem);
+  border-top: 1px solid var(--rule);
+}
+
+.rail {
+  position: sticky;
+  top: 5.5rem;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.45rem;
+  font-family: var(--font-mono);
+  height: fit-content;
+}
+
+.commitDot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1.5px solid var(--rule);
+  background: var(--paper);
+  transition: background 0.45s ease, border-color 0.45s ease;
+}
+
+.committed .commitDot {
+  background: var(--ship);
+  border-color: var(--ship);
+}
+
+.date,
+.version {
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+  color: var(--ink-soft);
+}
+
+.note {
+  font-size: 0.8125rem;
+  letter-spacing: 0.02em;
+  color: var(--accent-ink);
+}
+
+/* The one authored moment: as an entry scrolls in, the rail date sharpens
+   from a loose, blurred state and the body settles up a few pixels. */
+.pending .date,
+.pending .version {
+  filter: blur(3px);
+  opacity: 0.3;
+  letter-spacing: 0.24em;
+}
+
+.committed .date,
+.committed .version {
+  filter: blur(0);
+  opacity: 1;
+  letter-spacing: 0.02em;
+  transition: filter 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+    letter-spacing 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.body {
+  min-width: 0;
+  max-width: var(--measure);
+}
+
+.pending .body {
+  transform: translateY(7px);
+  opacity: 0.55;
+}
+
+.committed .body {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (max-width: 46rem) {
+  .entry {
+    grid-template-columns: 1fr;
+    row-gap: 0.85rem;
+  }
+  .rail {
+    position: static;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.7rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pending .body,
+  .committed .body {
+    transform: none;
+    opacity: 1;
+    transition: none;
+  }
+  .pending .date,
+  .pending .version {
+    filter: none;
+    opacity: 1;
+    letter-spacing: 0.02em;
+  }
+}

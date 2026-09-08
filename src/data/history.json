@@ -1,12 +1,14 @@
 [
   {
-    "role": "Software Engineer",
+    "role": "Full Stack Software Engineer",
     "organisation": "SHX",
     "startDate": "Jan, 2021",
     "endDate": "Present",
     "experiences": [
-      "Integrated a third-party SDK for smart POS devices enableded card transactions",
-      "Developed and deployed a React Native and Expo application consuming a Restful API built with Spring Boot. Completed within two weeks, the app empowered sellers to monitor sales statistics and goals in real time, significantly enhancing operational transparency and optimizing team performance."
+      "Built REST APIs in Java and Spring Boot serving 1000+ daily users, with performance work that cut response times by up to 70%.",
+      "Delivered enterprise integrations across SAP, e-commerce, and payment/POS systems, including a third-party SDK for smart-POS card transactions.",
+      "Shipped React Native and Expo apps used by 1000+ people — including a real-time sales-tracking app built in two weeks on a self-built Spring Boot API.",
+      "Ran CI/CD with Jenkins, GitHub, and EAS, containerized services with Docker, and operated the architecture on Google Cloud Platform."
     ],
     "imageSrc": "history/shx.svg"
   }
