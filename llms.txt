@@ -1,0 +1,44 @@
+# Guilherme Bergue
+
+> Full-stack software engineer with a back-end core. Ships production
+> software fast without dropping quality. Building production software
+> since January 2021.
+
+- Site: https://gbergue.github.io/my-portfolio/
+- Role: Full Stack Software Engineer at SHX (Jan 2021 – present)
+- Location: Brazil. Languages: Portuguese (native), English (fluent).
+- Contact: bergueeg@gmail.com · https://calendly.com/bergueeg/30min
+- GitHub: https://github.com/GBergue
+- LinkedIn: https://www.linkedin.com/in/guilherme-bergue
+
+## Stack
+
+Back end: Java, Spring Boot, Hibernate, REST APIs, microservices,
+PostgreSQL, MongoDB, Kafka, JUnit. Front end: React Native, Expo, React,
+TypeScript, Redux Toolkit, Jest. Infra: Docker, Jenkins, CI/CD, EAS,
+Google Cloud Platform, Maven.
+
+## Experience — SHX (Jan 2021 – present)
+
+- Built REST APIs in Java and Spring Boot serving 1000+ daily users;
+  performance work cut response times by up to 70%.
+- Delivered enterprise integrations across SAP, e-commerce, and
+  payment/POS systems, including a third-party SDK for smart-POS card
+  transactions.
+- Shipped React Native and Expo apps used by 1000+ people, including a
+  real-time sales-tracking app built in two weeks on a self-built Spring
+  Boot API.
+- Ran CI/CD with Jenkins, GitHub, and EAS; containerized services with
+  Docker; operated the architecture on Google Cloud Platform.
+
+## Projects
+
+- Showcase Expo app — smart-home device management over Bluetooth Low
+  Energy (BLE). React Native, Expo. https://github.com/GBergue/show-case-app
+- Econo Market — crowd-sourced product prices across local supermarkets.
+  React Native, Expo. https://github.com/GBergue/econo-market
+
+## Education
+
+- Postgraduate in Applied Java Engineering, Anhanguera (2025 – present)
+- BSc in Systems Analysis & Development, IFSP (2019 – 2023)
