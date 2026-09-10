@@ -36,5 +36,13 @@
   { "title": "Computer vision" },
   { "title": "On-device ML" },
   { "title": "Real-time face detection" },
-  { "title": "AI-assisted development" }
+  { "title": "AI-assisted development" },
+  { "title": "Claude Code" },
+  { "title": "Quarkus" },
+  { "title": "LangChain4j" },
+  { "title": "MCP" },
+  { "title": "Ollama" },
+  { "title": "PgVector" },
+  { "title": "Bluetooth" },
+  { "title": "Graphs" }
 ]
